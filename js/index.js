@@ -16,6 +16,15 @@ const config = require('./config');
 // 아래의 코드는 수정하지 마십시오.
 if (config.Enabled == false) return console.log("[API] 설정의 Enabled 값이 켜져있지 않습니다.")
 
+mongoose.connect(config.MongoDB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    keepAlive: true
+})
+.then(() => {
+    console.log("몽고DB에 성공적으로 접속하였습니다.")
+})
+
 app.get('/', async (req, res) => {
     res.json({ message: "OK" });
 })
