@@ -5,5 +5,8 @@
  - [roblox/DatabaseModule.rbxm]을 로블록스 스튜디오에서 파일로 불러와 ServerScriptService에 넣습니다.
  - 모듈의 사용 방법은 스크립트 안에 넣어놨으니, 참고하여 사용하시기 바랍니다.
 
+## 장점
+ - 로블록스 서버 내에 데이터가 저장되지 않아 안전합니다.
+
 # Credit
  - 제작 @rosolho123 (아이스샌즈#9999)
